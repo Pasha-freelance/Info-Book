@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Infobook</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/headImg.png" type="image/png">
+</head>
+<body>
+<button class="navBtn" id="favBtn" style="display: block;" title="Избранное">&#11088;</button>
+<button class="navBtn" id="goToSearchBtn" style="display: none;" title="Вернуться к поиску">&#128269;</button>
+<div class="container">
+    <section class="searchingBooksBlock">
+        <h1>Онлайн поисковик книг</h1>
+
+        <div class="inputWrap ">
+            <input type="text" id="searchInput" placeholder="Введите название книги">
+            <div class="buttonWrap" id="searchBut">
+                <button class="commonBtn" type="submit">Найти!</button>
+            </div>
+        </div>
+
+        <section class="books"></section>
+
+    </section>
+
+    <section class="myAccountBlock" style="display:none;">
+        <h2> Избранные книги</h2>
+
+        <section class="books favouriteBooks"></section>
+    </section>
+</div>
+<div class="preloader preloader__hide">
+    <svg class="preloader__image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor"
+              d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+        </path>
+    </svg>
+</div>
+<script src="script/js.js"></script>
+</body>
+</html>
